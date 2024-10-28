@@ -11,6 +11,8 @@
     <OutputPath>.</OutputPath>
     <Name>GPSconvertor</Name>
     <RootNamespace>GPSconvertor</RootNamespace>
+    <IsWindowsApplication>True</IsWindowsApplication>
+    <PublishUrl>C:\Users\jakub\Desktop</PublishUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +24,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="GPSconvertor.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="compass-for-orientation_icon-icons.com_56734.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

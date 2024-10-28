@@ -1,20 +1,21 @@
-# import os 
-
-# directory = "C:\Users\jakub\Desktop\VÚKOZ\WIP"
-# file_name = "PYoutput.txt"
-
 import pyperclip
 
-degree = int(input("Enter degrees"))
-minute = int(input("Enter minutes"))
-second = int(input("Enter seconds"))
+while True:
 
-try:
-    convert = degree + minute/60 + second/3600
-except :
-    convert = degree + minute/60
+    degree = int(input("Enter degrees "))
+    minute = int(input("Enter minutes "))
+    second = int(input("Enter seconds "))
+    letter = input("Enter letter ")
 
-
-print(convert)
-
-
+    try:
+      convert = degree + minute/60 + second/3600
+    except:
+        convert = degree + minute/60
+    
+    convert = str(convert) + " " + letter
+    print(convert)
+    
+    pyperclip.copy(convert)
+    
+    print("------------------------------")
+    
